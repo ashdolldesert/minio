@@ -1,0 +1,13 @@
+{
+  "name": "minionion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker-down": "docker-compose -f docker-compose.yaml down --remove-orphans --rmi local",
+    "docker-up": "docker-compose -f docker-compose.yaml up -d",
+    "docker-restart": "npm run docker-down && npm run docker-up"
+  },
+  "author": "",
+  "license": "ISC"
+}
